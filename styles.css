@@ -1,0 +1,153 @@
+body{
+    background-color: #000000!important;
+
+    background-blend-mode:darken;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: white!important;
+    
+}
+
+/*NavBar Start------------------------------------------ */
+
+nav {
+    
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    
+    
+}
+  
+nav ul {
+list-style-type: none;
+display: flex;
+text-align: center;
+justify-content: center;
+
+}
+
+nav ul li {
+margin-right: 80px;
+font-size: 1.2vw;
+text-align: center;
+}
+
+nav ul li a {
+
+color: #ffffff!important;
+font-weight: 500;
+text-decoration: none;
+display: inline-block;
+padding: 1px 20px;
+}
+
+nav ul li a:hover {
+background-color: rgba(248, 199, 37, 0.774);
+transition: .5s;
+border-radius: 200vw!important;
+}
+
+nav ul li.active a {
+background-color: rgba(248, 199, 37, 0.774);
+}
+
+#Logo{
+height: 30vw;
+border-radius: 200vw;
+background-color: white;
+margin-left: 10vw;
+margin-top: 5vw;
+}
+/*NavBar End------------------------------------------ */
+
+
+
+.flex-container > h1 {
+    color: white;
+    text-align: left;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    font-size: 4vw;
+    line-height: 1.4;
+}
+.flex-container {
+    display: flex;
+   
+}
+
+h2{
+    font-style: italic;
+    font-size: 1.8vw;
+    padding-bottom: 100px;
+    top: 30vw;
+}
+p{
+    left:5vw;
+    font-size: 1vw;
+    top:35vw;
+}
+a>img{
+    position: relative;
+    width: 2.4rem;
+    margin-right: 1rem;
+    top: 1px;
+}
+P,h2{
+    margin-left: 50vw;
+    position:absolute;
+   
+}
+
+
+
+
+/*Small Screens(Phones) Start------------------------------------------ */
+
+@media (min-width: 360px) and (max-width: 420px) {
+
+    #Logo{
+        height: 60vw;
+        border-radius: 200vw;
+        background-color: white;
+        margin-left: 16vw;
+        margin-top: 5vw;
+        }
+    .flex-container > h1 {
+        color: white;
+        text-align: left;
+        font-size: 7.5vw;
+        line-height: 1.4;
+        margin-left: 20vw;
+    }
+    .flex-container {
+        display:block;
+       
+    }
+    
+    h2{
+        font-style: italic;
+        font-size: 4.5vw !important;
+        padding-bottom: 0;
+        margin-left: 20vw !important
+    }
+    p{
+        font-size: 4vw;
+    }
+    a>img{
+        
+        width:1rem;
+       
+    }
+    P,h2{
+        position:static ;
+        margin-left: 50px ;
+    }
+    
+    
+
+}
+
+
+
