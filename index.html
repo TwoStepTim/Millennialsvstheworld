@@ -1,61 +1,76 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
 </head>
-
-<nav class="navbar navbar-expand-lg navbar-dark ">
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="PODCAST_PLAYLIST.HTML">PODCAST PLAYLIST</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="BornIIWIN.html">BornIIWIN</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="ABOUTUS.html">ABOUT US</a>
-          </li>
-      </ul>
-  </div>
-</nav>
-
 <body>
-  
-  <div class="flex-container">
-    <div class="Main_Logo">
-      <img  id="Logo"  src="Images/Logo(MVTW).png" >
+
+    <section class="Main">
+        <div class="Ticket">
+            <a href="#"><img src="assets/imgs/Tickets.png" alt=""></a>
+        </div>
+         <div class= sidebar>
+        <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+        <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
+        <nav class="navbar_moblie" id="myNavbar">
+            <ul>
+                <li><a href="#expertise" class="nav-link">Contact</a></li>
+                <li><a href="#work" class="nav-link">About US</a></li>
+            </ul>
+                <p>
+                    &copy 2023. Created with passion by Timothy Mims. 
+                    All rights reserved.
+                </p>
+        </nav>
     </div>
-    <h1>AUTHENTICITY<br>
-      AND ENTERTAINMENT<br>
-      AT THE SAME TIME.
-    </h1>
-  </div>
-  <h2>
-    Millennials VS The World
-  </h2>
- 
-  <p>
-    <a href="https://www.instagram.com/millennialsvstheworld_podcast/">
-      <img src="Images/Instagram.png" alt="Instagram">
-    </a>
-    @Millennialsvstheworld_podcast
-  </p>
+        <div class="hero-image">
+            <div class="hero-text">
+            <h1>An experience Like No Other</h1>
+             <nav  class="socials">
+                <ul>
+                    <li> <a href="#"><img src="assets/imgs/instagramicon.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/imgs/x.png" alt=""></a></li>
+                </ul>
+             </nav>
+            
+            </div>
+        </div>
+        
+    </section>
+    <div class="scroller">
+        <div class="episodes">
+          <div class="episode"><img src="assets/imgs/Scene1.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene2.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene3.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene4.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene5.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene6.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene7.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene1.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene2.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene3.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene4.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene5.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene6.JPG" alt=""></div>
+          <div class="episode"><img src="assets/imgs/Scene7.JPG" alt=""></div>
+          
+          <!-- ... Add more episode items ... -->
+        </div>
+
+      </div>
+    
+      
+    <p>Page content..</p>
+    <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+    <script src="main.js"></script>
+ <section>
+    
+ </section>
 </body>
-<script src="script.js"></script>
 </html>

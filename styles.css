@@ -1,153 +1,174 @@
-body{
-    background-color: #000000!important;
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url("assets/imgs/IMG_3130.JPG");
 
-    background-blend-mode:darken;
-    overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
-    color: white!important;
-    
 }
 
-/*NavBar Start------------------------------------------ */
+.main{
+    background-image: url("assets/imgs/IMG_3351.JPG");
+    background-color: #cccccc;
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
-nav {
-    
-    color: #fff;
+.Ticket img{
+    position: relative;
+    left: 85vw;
+    width: 12vw;
+}
+.hero-text {
     text-align: center;
-    width: 100%;
-    margin-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.navbar_moblie{
+    background-color: rgba(255, 255, 255,.6);
+    text-align: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-left: 0vw;
+    margin-top: 0vw;
+    height: 100vh;
+    width: 30vw;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+
+.animate {
+	animation: fadeInDown 0.5s ease-out; /* Add the animation */
+}
+
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar_moblie ul {
+	list-style: none;
+	padding: 0;
+    padding-top: 100px;
+	
+}
+
+.navbar_moblie li {
+	padding-bottom: 20px;
+    text-align:justify;
+	margin: 0 15px;
+	opacity: 100%;
+}
+
+.navbar_moblie a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	transition: color 0.3s;
+	word-spacing: 10px;
+	font-size: 3vw;
+	opacity: 100%;
+    font-weight: 300;
+}
+.navbar_moblie p{
+    font-size: 1vw;
+   padding: 5px;
+}
+
+.hamburger {
+    font-size: 50px;
+    display:block;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute; /* Position the hamburger icon */
+    top: 10px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 101; /* Ensure the hamburger is above the navbar */
+}
+/* Add a style for when the checkbox is checked */
+#sidebar-checkbox:checked + .navbar_moblie {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Reset the transform to make it appear */
+}
+
+/* Style for the navigation bar when checkbox is unchecked */
+#sidebar-checkbox:not(:checked) + .navbar_moblie {
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-100%); /* Move the navbar up initially */
+    transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
+}
+.navbar a:hover{
+    color: rgba(165, 243, 237, 0.925);  
+}
+.socials ul {
+    list-style: none;
+    padding: 0;
+}
+.socials li{
+    display: inline;
+    margin: 0 15px;
+    opacity: 100%;
+}
+.socials img{
+    width: 2vw;
+}
+.socials a {
+    background: rgba(255, 255, 255,.7);  
+    border-radius: 10px;
+    padding: 10px 5px 0px 5px;
+}
+.socials a:hover{
+    background: rgba(14, 237, 219, 0.7);  
+    border-radius: 10px;
+    padding: 10px 5px;
     
-    
+}
+.scroller {
+    position: relative;
+    width: 80%;
+    Top: 0vh;
+    left:10vw;
+    max-width: 80vw;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+  }
+  
+  .episodes {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .episode {
+    flex: 0 0 20%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+    .episode img{
+    height: 20vh;
 }
   
-nav ul {
-list-style-type: none;
-display: flex;
-text-align: center;
-justify-content: center;
-
-}
-
-nav ul li {
-margin-right: 80px;
-font-size: 1.2vw;
-text-align: center;
-}
-
-nav ul li a {
-
-color: #ffffff!important;
-font-weight: 500;
-text-decoration: none;
-display: inline-block;
-padding: 1px 20px;
-}
-
-nav ul li a:hover {
-background-color: rgba(248, 199, 37, 0.774);
-transition: .5s;
-border-radius: 200vw!important;
-}
-
-nav ul li.active a {
-background-color: rgba(248, 199, 37, 0.774);
-}
-
-#Logo{
-height: 30vw;
-border-radius: 200vw;
-background-color: white;
-margin-left: 10vw;
-margin-top: 5vw;
-}
-/*NavBar End------------------------------------------ */
-
-
-
-.flex-container > h1 {
-    color: white;
-    text-align: left;
-    margin-top: 5vw;
-    margin-left: 10vw;
-    font-size: 4vw;
-    line-height: 1.4;
-}
-.flex-container {
-    display: flex;
-   
-}
-
-h2{
-    font-style: italic;
-    font-size: 1.8vw;
-    padding-bottom: 100px;
-    top: 30vw;
-}
-p{
-    left:5vw;
-    font-size: 1vw;
-    top:35vw;
-}
-a>img{
-    position: relative;
-    width: 2.4rem;
-    margin-right: 1rem;
-    top: 1px;
-}
-P,h2{
-    margin-left: 50vw;
-    position:absolute;
-   
-}
-
-
-
-
-/*Small Screens(Phones) Start------------------------------------------ */
-
-@media (min-width: 360px) and (max-width: 420px) {
-
-    #Logo{
-        height: 60vw;
-        border-radius: 200vw;
-        background-color: white;
-        margin-left: 16vw;
-        margin-top: 5vw;
-        }
-    .flex-container > h1 {
-        color: white;
-        text-align: left;
-        font-size: 7.5vw;
-        line-height: 1.4;
-        margin-left: 20vw;
-    }
-    .flex-container {
-        display:block;
-       
-    }
-    
-    h2{
-        font-style: italic;
-        font-size: 4.5vw !important;
-        padding-bottom: 0;
-        margin-left: 20vw !important
-    }
-    p{
-        font-size: 4vw;
-    }
-    a>img{
-        
-        width:1rem;
-       
-    }
-    P,h2{
-        position:static ;
-        margin-left: 50px ;
-    }
-    
-    
-
-}
-
-
-
+  .episode:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
