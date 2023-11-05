@@ -128,4 +128,38 @@ body {
     left: 40vw;
     height:35vh;
   }
+
+  .Title
+  {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    transform: translate(0%,50%);
+    
+  }
+
+  .ShowOff-Image img
+  {
+    position: relative;
+    transform: translate(50%, 50%);
+    left: 5vw;
+    height: 30vh;
+  }
+
+  .Paragraph
+  {
+    position: relative;
+    transform: translate(-15%,0%);
+    text-align: right;
+    font-size: 15px;
+    color: #ffffff;
+    
+  }
+
+
+
+  
+  
+
+  
   
