@@ -1,31 +1,3 @@
-const scroller = document.querySelector('.scroller');
-const episodes = document.querySelector('.episodes');
-const episodeItems = document.querySelectorAll('.episode');
-const episodeWidth = episodeItems[0].offsetWidth;
-const totalEpisodes = episodeItems.length;
-
-let currentIndex = 0;
-
-function updateScroll() {
-  // Get the current scroll position of the webpage
-  const scrollY = window.scrollY || document.documentElement.scrollTop;
-
-  // Calculate the index based on the scroll position
-  currentIndex = Math.floor(scrollY / episodeWidth);
-
-  // Ensure the index is within valid bounds
-  currentIndex = Math.max(0, Math.min(currentIndex, totalEpisodes - 1));
-
-  // Calculate the offset for the current index
-  const offset = -currentIndex * episodeWidth*3;
-
-  // Apply the transform to the episodes container
-  episodes.style.transform = `translateX(${offset}px)`;
-}
-
-// Initial check to set the correct episode based on the initial scroll position
-updateScroll();
-
 // Add a scroll event listener to update the scroll position
 window.addEventListener('scroll', updateScroll);
 
@@ -58,3 +30,32 @@ navLinks.forEach(link => {
         closeNavBar(); // Call the function to close the navigation bar
     });
 });
+
+const scroller = document.querySelector('.scroller');
+const episodes = document.querySelector('.episodes');
+const episodeItems = document.querySelectorAll('.episode');
+const episodeWidth = episodeItems[0].offsetWidth;
+const totalEpisodes = episodeItems.length;
+
+let currentIndex = 0;
+
+function updateScroll() {
+  // Get the current scroll position of the webpage
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+  // Calculate the index based on the scroll position
+  currentIndex = Math.floor(scrollY / episodeWidth);
+
+  // Ensure the index is within valid bounds
+  currentIndex = Math.max(0, Math.min(currentIndex, totalEpisodes - 1));
+
+  // Calculate the offset for the current index
+  const offset = -currentIndex * episodeWidth*3;
+
+  // Apply the transform to the episodes container
+  episodes.style.transform = `translateX(${offset}px)`;
+}
+
+// Initial check to set the correct episode based on the initial scroll position
+updateScroll();
+
